@@ -1,0 +1,1110 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: pkt_preprocessor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pkt_preprocessor.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pkt_preprocessor"
+Output Format                      : NGC
+Target Device                      : xc7k325t-1-ffg676
+
+---- Source Options
+Top Module Name                    : pkt_preprocessor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "G:\openflow1.3\pkt_preprocessor\small_fifo_v3.v" into library work
+Parsing module <small_fifo>.
+INFO:HDLCompiler:693 - "G:\openflow1.3\pkt_preprocessor\small_fifo_v3.v" Line 38. parameter declaration becomes local in small_fifo with formal parameter declaration list
+Analyzing Verilog file "G:\openflow1.3\pkt_preprocessor\lu_entry_composer.v" into library work
+Parsing verilog file "registers.v" included at line 41.
+Parsing module <lu_entry_composer>.
+Analyzing Verilog file "G:\openflow1.3\pkt_preprocessor\header_parser.v" into library work
+Parsing verilog file "registers.v" included at line 47.
+Parsing module <header_parser>.
+Analyzing Verilog file "G:\openflow1.3\pkt_preprocessor\fallthrough_small_fifo_v2.v" into library work
+Parsing module <fallthrough_small_fifo>.
+Analyzing Verilog file "G:\openflow1.3\pkt_preprocessor\pkt_preprocessor.v" into library work
+Parsing verilog file "registers.v" included at line 43.
+Parsing module <pkt_preprocessor>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <pkt_preprocessor>.
+
+Elaborating module <fallthrough_small_fifo(WIDTH=128,MAX_DEPTH_BITS=3)>.
+
+Elaborating module <small_fifo(WIDTH=128,MAX_DEPTH_BITS=3,PROG_FULL_THRESHOLD=32'sb0111)>.
+WARNING:HDLCompiler:413 - "G:\openflow1.3\pkt_preprocessor\small_fifo_v3.v" Line 66: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "G:\openflow1.3\pkt_preprocessor\small_fifo_v3.v" Line 67: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "G:\openflow1.3\pkt_preprocessor\small_fifo_v3.v" Line 68: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "G:\openflow1.3\pkt_preprocessor\small_fifo_v3.v" Line 73: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1127 - "G:\openflow1.3\pkt_preprocessor\pkt_preprocessor.v" Line 214: Assignment to tx_user_nearly_full ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "G:\openflow1.3\pkt_preprocessor\pkt_preprocessor.v" Line 215: Assignment to tx_user_empty ignored, since the identifier is never used
+
+Elaborating module <fallthrough_small_fifo(WIDTH=32'sb01001010,MAX_DEPTH_BITS=3)>.
+
+Elaborating module <small_fifo(WIDTH=32'sb01001010,MAX_DEPTH_BITS=3,PROG_FULL_THRESHOLD=32'sb0111)>.
+WARNING:HDLCompiler:413 - "G:\openflow1.3\pkt_preprocessor\small_fifo_v3.v" Line 66: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "G:\openflow1.3\pkt_preprocessor\small_fifo_v3.v" Line 67: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "G:\openflow1.3\pkt_preprocessor\small_fifo_v3.v" Line 68: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "G:\openflow1.3\pkt_preprocessor\small_fifo_v3.v" Line 73: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <header_parser(C_AXIS_DATA_WIDTH=64,C_AXIS_LEN_DATA_WIDTH=16,C_AXIS_SPT_DATA_WIDTH=8)>.
+WARNING:HDLCompiler:413 - "G:\openflow1.3\pkt_preprocessor\header_parser.v" Line 270: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "G:\openflow1.3\pkt_preprocessor\header_parser.v" Line 271: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "G:\openflow1.3\pkt_preprocessor\header_parser.v" Line 631: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "G:\openflow1.3\pkt_preprocessor\header_parser.v" Line 642: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "G:\openflow1.3\pkt_preprocessor\header_parser.v" Line 689: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "G:\openflow1.3\pkt_preprocessor\header_parser.v" Line 736: Result of 32-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <lu_entry_composer(OPENFLOW_MATCH_SIZE=256,C_AXIS_LEN_DATA_WIDTH=16,C_AXIS_SPT_DATA_WIDTH=8,MPLS_ENABLE=0)>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <pkt_preprocessor>.
+    Related source file is "G:\openflow1.3\pkt_preprocessor\pkt_preprocessor.v".
+        C_AXIS_DATA_WIDTH = 64
+        C_AXIS_TUSER_WIDTH = 128
+        C_AXIS_LEN_DATA_WIDTH = 16
+        C_AXIS_SPT_DATA_WIDTH = 8
+        C_AXIS_DPT_DATA_WIDTH = 8
+        OPENFLOW_MATCH_SIZE = 256
+        MPLS_ENABLE = 0
+        DATA_WIDTH = 32
+WARNING:Xst:647 - Input <m_axis_tready> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "G:\openflow1.3\pkt_preprocessor\pkt_preprocessor.v" line 207: Output port <full> of the instance <input_metadata_buf> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "G:\openflow1.3\pkt_preprocessor\pkt_preprocessor.v" line 207: Output port <nearly_full> of the instance <input_metadata_buf> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "G:\openflow1.3\pkt_preprocessor\pkt_preprocessor.v" line 207: Output port <prog_full> of the instance <input_metadata_buf> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "G:\openflow1.3\pkt_preprocessor\pkt_preprocessor.v" line 207: Output port <empty> of the instance <input_metadata_buf> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "G:\openflow1.3\pkt_preprocessor\pkt_preprocessor.v" line 225: Output port <full> of the instance <input_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "G:\openflow1.3\pkt_preprocessor\pkt_preprocessor.v" line 225: Output port <prog_full> of the instance <input_fifo> is unconnected or connected to loadless signal.
+    Found 2-bit register for signal <s_tuser_state>.
+    Found 1-bit register for signal <s_tuser_valid>.
+    Found finite state machine <FSM_0> for signal <s_tuser_state>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | asclk (rising_edge)                            |
+    | Reset              | aresetn_INV_3_o (positive)                     |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 01                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <pkt_preprocessor> synthesized.
+
+Synthesizing Unit <fallthrough_small_fifo_1>.
+    Related source file is "G:\openflow1.3\pkt_preprocessor\fallthrough_small_fifo_v2.v".
+        WIDTH = 128
+        MAX_DEPTH_BITS = 3
+        PROG_FULL_THRESHOLD = 7
+    Found 1-bit register for signal <empty>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <fallthrough_small_fifo_1> synthesized.
+
+Synthesizing Unit <small_fifo_1>.
+    Related source file is "G:\openflow1.3\pkt_preprocessor\small_fifo_v3.v".
+        WIDTH = 128
+        MAX_DEPTH_BITS = 3
+        PROG_FULL_THRESHOLD = 7
+    Found 8x128-bit dual-port RAM <Mram_queue> for signal <queue>.
+    Found 3-bit register for signal <rd_ptr>.
+    Found 3-bit register for signal <wr_ptr>.
+    Found 4-bit register for signal <depth>.
+    Found 128-bit register for signal <dout>.
+    Found 3-bit adder for signal <wr_ptr[2]_GND_3_o_add_6_OUT> created at line 66.
+    Found 3-bit adder for signal <rd_ptr[2]_GND_3_o_add_8_OUT> created at line 67.
+    Found 4-bit adder for signal <depth[3]_GND_3_o_add_10_OUT> created at line 72.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_12_OUT<3:0>> created at line 77.
+    Found 4-bit comparator lessequal for signal <n0023> created at line 84
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred 138 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <small_fifo_1> synthesized.
+
+Synthesizing Unit <fallthrough_small_fifo_2>.
+    Related source file is "G:\openflow1.3\pkt_preprocessor\fallthrough_small_fifo_v2.v".
+        WIDTH = 74
+        MAX_DEPTH_BITS = 3
+        PROG_FULL_THRESHOLD = 7
+    Found 1-bit register for signal <empty>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <fallthrough_small_fifo_2> synthesized.
+
+Synthesizing Unit <small_fifo_2>.
+    Related source file is "G:\openflow1.3\pkt_preprocessor\small_fifo_v3.v".
+        WIDTH = 74
+        MAX_DEPTH_BITS = 3
+        PROG_FULL_THRESHOLD = 7
+    Found 8x74-bit dual-port RAM <Mram_queue> for signal <queue>.
+    Found 3-bit register for signal <rd_ptr>.
+    Found 3-bit register for signal <wr_ptr>.
+    Found 4-bit register for signal <depth>.
+    Found 74-bit register for signal <dout>.
+    Found 3-bit adder for signal <wr_ptr[2]_GND_5_o_add_6_OUT> created at line 66.
+    Found 3-bit adder for signal <rd_ptr[2]_GND_5_o_add_8_OUT> created at line 67.
+    Found 4-bit adder for signal <depth[3]_GND_5_o_add_10_OUT> created at line 72.
+    Found 4-bit subtractor for signal <GND_5_o_GND_5_o_sub_12_OUT<3:0>> created at line 77.
+    Found 4-bit comparator lessequal for signal <n0023> created at line 84
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  84 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <small_fifo_2> synthesized.
+
+Synthesizing Unit <header_parser>.
+    Related source file is "G:\openflow1.3\pkt_preprocessor\header_parser.v".
+        C_AXIS_DATA_WIDTH = 64
+        C_AXIS_LEN_DATA_WIDTH = 16
+        C_AXIS_SPT_DATA_WIDTH = 8
+    Found 1-bit register for signal <tx_last_int>.
+    Found 3-bit register for signal <dt_rd_state>.
+    Found 64-bit register for signal <be_tx_data>.
+    Found 6-bit register for signal <be_tx_strb<5:0>>.
+    Found 16-bit register for signal <tx_len_data_int>.
+    Found 8-bit register for signal <tx_spt_data_int>.
+    Found 1-bit register for signal <vlan_msb>.
+    Found 1-bit register for signal <vlan_lsb>.
+    Found 1-bit register for signal <dl_start>.
+    Found 16-bit register for signal <pkt_len>.
+    Found 8-bit register for signal <src_port>.
+    Found 48-bit register for signal <dl_dst>.
+    Found 48-bit register for signal <dl_src>.
+    Found 16-bit register for signal <dl_ethtype>.
+    Found 16-bit register for signal <dl_vlantag>.
+    Found 64-bit register for signal <dl_tdata>.
+    Found 16-bit register for signal <dl_tdata16_buf>.
+    Found 48-bit register for signal <dl_tdata48_buf>.
+    Found 1-bit register for signal <dl_done>.
+    Found 1-bit register for signal <ip_start>.
+    Found 1-bit register for signal <arp_start>.
+    Found 1-bit register for signal <mpls_start>.
+    Found 1-bit register for signal <dl_valid>.
+    Found 9-bit register for signal <dl_state>.
+    Found 20-bit register for signal <mplslabel>.
+    Found 3-bit register for signal <mplstc>.
+    Found 1-bit register for signal <mpls_done>.
+    Found 2-bit register for signal <mpls_state>.
+    Found 8-bit register for signal <arp_op>.
+    Found 32-bit register for signal <arp_ip_src>.
+    Found 32-bit register for signal <arp_ip_dst>.
+    Found 1-bit register for signal <arp_done>.
+    Found 5-bit register for signal <arp_state>.
+    Found 8-bit register for signal <ip_hlen>.
+    Found 6-bit register for signal <ip_tos>.
+    Found 1-bit register for signal <ip_flag>.
+    Found 8-bit register for signal <ip_proto>.
+    Found 32-bit register for signal <ip_src>.
+    Found 32-bit register for signal <ip_dst>.
+    Found 16-bit register for signal <tp_src>.
+    Found 16-bit register for signal <tp_dst>.
+    Found 5-bit register for signal <ip_state>.
+    Found 1-bit register for signal <ip_tp_done>.
+    Found 32-bit register for signal <dl_parse_cnt>.
+    Found 32-bit register for signal <mpls_parse_cnt>.
+    Found 32-bit register for signal <arp_parse_cnt>.
+    Found 32-bit register for signal <ip_tp_parse_cnt>.
+    Found 1-bit register for signal <tx_valid_int>.
+    Found finite state machine <FSM_1> for signal <dt_rd_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | asclk (rising_edge)                            |
+    | Reset              | aresetn_INV_33_o (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 001                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <dl_state>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 27                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 9                                              |
+    | Clock              | asclk (rising_edge)                            |
+    | Reset              | aresetn_INV_33_o (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000000001                                      |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_3> for signal <mpls_state>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | asclk (rising_edge)                            |
+    | Reset              | aresetn_INV_33_o (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 01                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_4> for signal <arp_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 5                                              |
+    | Clock              | asclk (rising_edge)                            |
+    | Reset              | aresetn_INV_33_o (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00001                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_5> for signal <ip_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 5                                              |
+    | Clock              | asclk (rising_edge)                            |
+    | Reset              | aresetn_INV_33_o (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00001                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 5-bit subtractor for signal <GND_6_o_GND_6_o_sub_198_OUT> created at line 631.
+    Found 32-bit adder for signal <dl_parse_cnt[31]_GND_6_o_add_314_OUT> created at line 790.
+    Found 32-bit adder for signal <mpls_parse_cnt[31]_GND_6_o_add_316_OUT> created at line 793.
+    Found 32-bit adder for signal <arp_parse_cnt[31]_GND_6_o_add_318_OUT> created at line 796.
+    Found 32-bit adder for signal <ip_tp_parse_cnt[31]_GND_6_o_add_320_OUT> created at line 799.
+    Found 8-bit subtractor for signal <GND_6_o_GND_6_o_sub_204_OUT<7:0>> created at line 642.
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred 729 D-type flip-flop(s).
+	inferred 136 Multiplexer(s).
+	inferred   5 Finite State Machine(s).
+Unit <header_parser> synthesized.
+
+Synthesizing Unit <lu_entry_composer>.
+    Related source file is "G:\openflow1.3\pkt_preprocessor\lu_entry_composer.v".
+        OPENFLOW_MATCH_SIZE = 256
+        C_AXIS_LEN_DATA_WIDTH = 16
+        C_AXIS_SPT_DATA_WIDTH = 8
+        MPLS_ENABLE = 0
+WARNING:Xst:647 - Input <mplslabel> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <mplstc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <sc_state>.
+    Found 1-bit register for signal <lu_req_prev>.
+    Found 1-bit register for signal <int_req>.
+    Found 256-bit register for signal <int_entry>.
+    Found 16-bit register for signal <int_len>.
+    Found 1-bit register for signal <compose_done>.
+    Found 2-bit register for signal <req_latch_state>.
+    Found 1-bit register for signal <lu_req>.
+    Found 256-bit register for signal <lu_entry>.
+    Found 16-bit register for signal <lu_len>.
+    Found 2-bit register for signal <lookup_inf_state>.
+    Found 1-bit register for signal <parse_started>.
+    Found finite state machine <FSM_6> for signal <sc_state>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | asclk (rising_edge)                            |
+    | Reset              | aresetn_INV_54_o (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 01                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_7> for signal <req_latch_state>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 5                                              |
+    | Outputs            | 2                                              |
+    | Clock              | asclk (rising_edge)                            |
+    | Reset              | aresetn_INV_54_o (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 01                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_8> for signal <lookup_inf_state>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | asclk (rising_edge)                            |
+    | Reset              | aresetn_INV_54_o (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 01                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred 549 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+	inferred   3 Finite State Machine(s).
+Unit <lu_entry_composer> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 8x128-bit dual-port RAM                               : 1
+ 8x74-bit dual-port RAM                                : 1
+# Adders/Subtractors                                   : 12
+ 3-bit adder                                           : 4
+ 32-bit adder                                          : 4
+ 4-bit addsub                                          : 2
+ 5-bit subtractor                                      : 1
+ 8-bit subtractor                                      : 1
+# Registers                                            : 63
+ 1-bit register                                        : 22
+ 128-bit register                                      : 1
+ 16-bit register                                       : 9
+ 20-bit register                                       : 1
+ 256-bit register                                      : 2
+ 3-bit register                                        : 5
+ 32-bit register                                       : 8
+ 4-bit register                                        : 2
+ 48-bit register                                       : 3
+ 6-bit register                                        : 2
+ 64-bit register                                       : 2
+ 74-bit register                                       : 1
+ 8-bit register                                        : 5
+# Comparators                                          : 2
+ 4-bit comparator lessequal                            : 2
+# Multiplexers                                         : 150
+ 1-bit 2-to-1 multiplexer                              : 106
+ 16-bit 2-to-1 multiplexer                             : 22
+ 32-bit 2-to-1 multiplexer                             : 4
+ 48-bit 2-to-1 multiplexer                             : 3
+ 6-bit 2-to-1 multiplexer                              : 4
+ 64-bit 2-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 9
+# FSMs                                                 : 9
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <int_entry_224> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <int_entry_225> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <int_entry_248> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <int_entry_249> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <int_entry_250> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <int_entry_251> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <int_entry_252> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <int_entry_253> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <int_entry_254> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <int_entry_255> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_255> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_254> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_253> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_252> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_251> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_250> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_249> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_248> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_225> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_224> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <dout_24> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_25> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_26> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_27> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_28> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_29> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_30> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_31> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_32> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_33> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_34> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_35> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_36> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_37> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_38> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_39> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_40> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_41> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_42> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_43> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_44> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_45> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_46> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_47> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_48> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_49> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_50> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_51> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_52> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_53> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_54> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_55> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_56> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_57> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_58> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_59> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_60> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_61> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_62> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_63> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_64> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_65> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_66> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_67> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_68> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_69> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_70> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_71> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_72> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_73> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_74> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_75> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_76> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_77> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_78> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_79> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_80> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_81> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_82> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_83> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_84> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_85> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_86> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_87> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_88> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_89> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_90> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_91> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_92> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_93> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_94> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_95> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_96> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_97> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_98> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_99> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_100> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_101> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_102> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_103> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_104> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_105> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_106> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_107> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_108> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_109> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_110> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_111> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_112> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_113> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_114> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_115> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_116> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_117> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_118> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_119> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_120> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_121> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_122> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_123> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_124> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_125> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_126> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_127> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_64> of sequential type is unconnected in block <fifo>.
+WARNING:Xst:2677 - Node <dout_65> of sequential type is unconnected in block <fifo>.
+
+Synthesizing (advanced) Unit <header_parser>.
+The following registers are absorbed into counter <dl_parse_cnt>: 1 register on signal <dl_parse_cnt>.
+The following registers are absorbed into counter <mpls_parse_cnt>: 1 register on signal <mpls_parse_cnt>.
+The following registers are absorbed into counter <ip_tp_parse_cnt>: 1 register on signal <ip_tp_parse_cnt>.
+The following registers are absorbed into counter <arp_parse_cnt>: 1 register on signal <arp_parse_cnt>.
+Unit <header_parser> synthesized (advanced).
+
+Synthesizing (advanced) Unit <small_fifo_1>.
+The following registers are absorbed into counter <depth>: 1 register on signal <depth>.
+The following registers are absorbed into counter <wr_ptr>: 1 register on signal <wr_ptr>.
+The following registers are absorbed into counter <rd_ptr>: 1 register on signal <rd_ptr>.
+INFO:Xst:3226 - The RAM <Mram_queue> will be implemented as a BLOCK RAM, absorbing the following register(s): <dout>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 128-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <wr_ptr>        |          |
+    |     diA            | connected to signal <din>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 128-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     enB            | connected to signal <rd_en>         | high     |
+    |     addrB          | connected to signal <rd_ptr>        |          |
+    |     doB            | connected to signal <dout>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <small_fifo_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <small_fifo_2>.
+The following registers are absorbed into counter <depth>: 1 register on signal <depth>.
+The following registers are absorbed into counter <wr_ptr>: 1 register on signal <wr_ptr>.
+The following registers are absorbed into counter <rd_ptr>: 1 register on signal <rd_ptr>.
+INFO:Xst:3226 - The RAM <Mram_queue> will be implemented as a BLOCK RAM, absorbing the following register(s): <dout>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 74-bit                     |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <wr_ptr>        |          |
+    |     diA            | connected to signal <din>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 74-bit                     |          |
+    |     mode           | read-first                          |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     enB            | connected to signal <rd_en>         | high     |
+    |     addrB          | connected to signal <rd_ptr>        |          |
+    |     doB            | connected to signal <dout>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <small_fifo_2> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 8x128-bit dual-port block RAM                         : 1
+ 8x74-bit dual-port block RAM                          : 1
+# Adders/Subtractors                                   : 2
+ 5-bit subtractor                                      : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 10
+ 3-bit up counter                                      : 4
+ 32-bit up counter                                     : 4
+ 4-bit updown counter                                  : 2
+# Registers                                            : 1153
+ Flip-Flops                                            : 1153
+# Comparators                                          : 2
+ 4-bit comparator lessequal                            : 2
+# Multiplexers                                         : 150
+ 1-bit 2-to-1 multiplexer                              : 106
+ 16-bit 2-to-1 multiplexer                             : 22
+ 32-bit 2-to-1 multiplexer                             : 4
+ 48-bit 2-to-1 multiplexer                             : 3
+ 6-bit 2-to-1 multiplexer                              : 4
+ 64-bit 2-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 9
+# FSMs                                                 : 9
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <int_entry_224> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <int_entry_225> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <int_entry_248> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <int_entry_249> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <int_entry_250> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <int_entry_251> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <int_entry_252> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <int_entry_253> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <int_entry_254> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <int_entry_255> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_255> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_254> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_253> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_252> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_251> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_250> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_249> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_248> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_225> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lu_entry_224> (without init value) has a constant value of 0 in block <lu_entry_composer>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <s_tuser_state[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 01    | 0
+ 10    | 1
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <header_parser/FSM_3> on signal <mpls_state[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 01    | 0
+ 10    | 1
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <header_parser/FSM_1> on signal <dt_rd_state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 001   | 00
+ 010   | 01
+ 100   | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <header_parser/FSM_2> on signal <dl_state[1:9]> with user encoding.
+------------------------
+ State     | Encoding
+------------------------
+ 000000001 | 000000001
+ 000000010 | 000000010
+ 000000100 | 000000100
+ 000001000 | 000001000
+ 000010000 | 000010000
+ 000100000 | 000100000
+ 001000000 | 001000000
+ 010000000 | 010000000
+ 100000000 | 100000000
+------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <header_parser/FSM_4> on signal <arp_state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00001 | 000
+ 00010 | 001
+ 00100 | 011
+ 01000 | 010
+ 10000 | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <header_parser/FSM_5> on signal <ip_state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00001 | 000
+ 00010 | 001
+ 00100 | 011
+ 01000 | 010
+ 10000 | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <lu_entry_composer/FSM_8> on signal <lookup_inf_state[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 01    | 0
+ 10    | 1
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <lu_entry_composer/FSM_6> on signal <sc_state[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 01    | 0
+ 10    | 1
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <lu_entry_composer/FSM_7> on signal <req_latch_state[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 01    | 0
+ 10    | 1
+-------------------
+
+Optimizing unit <pkt_preprocessor> ...
+
+Optimizing unit <small_fifo_1> ...
+
+Optimizing unit <small_fifo_2> ...
+
+Optimizing unit <header_parser> ...
+
+Optimizing unit <lu_entry_composer> ...
+WARNING:Xst:2677 - Node <input_metadata_buf/fifo/Mram_queue2> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_19> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_18> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_17> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_16> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_15> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_14> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_13> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_12> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_11> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_10> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_9> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_8> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_7> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_6> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_5> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_4> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_3> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_2> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_1> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplslabel_0> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplstc_2> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplstc_1> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:2677 - Node <header_parser/mplstc_0> of sequential type is unconnected in block <pkt_preprocessor>.
+WARNING:Xst:1710 - FF/Latch <input_fifo/fifo/depth_3> (without init value) has a constant value of 0 in block <pkt_preprocessor>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <header_parser/dt_rd_state_FSM_FFd1> in Unit <pkt_preprocessor> is equivalent to the following FF/Latch, which will be removed : <header_parser/tx_last_int> 
+INFO:Xst:2261 - The FF/Latch <lu_entry_composer/sc_state_FSM_FFd1> in Unit <pkt_preprocessor> is equivalent to the following FF/Latch, which will be removed : <lu_entry_composer/parse_started> 
+INFO:Xst:2261 - The FF/Latch <lu_entry_composer/req_latch_state_FSM_FFd1> in Unit <pkt_preprocessor> is equivalent to the following FF/Latch, which will be removed : <lu_entry_composer/int_req> 
+INFO:Xst:2261 - The FF/Latch <lu_entry_composer/lookup_inf_state_FSM_FFd1> in Unit <pkt_preprocessor> is equivalent to the following FF/Latch, which will be removed : <lu_entry_composer/lu_req> 
+INFO:Xst:3203 - The FF/Latch <s_tuser_valid> in Unit <pkt_preprocessor> is the opposite to the following FF/Latch, which will be removed : <s_tuser_state_FSM_FFd1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block pkt_preprocessor, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1274
+ Flip-Flops                                            : 1274
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : pkt_preprocessor.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1224
+#      GND                         : 1
+#      INV                         : 12
+#      LUT1                        : 124
+#      LUT2                        : 23
+#      LUT3                        : 56
+#      LUT4                        : 112
+#      LUT5                        : 158
+#      LUT6                        : 484
+#      MUXCY                       : 124
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 128
+# FlipFlops/Latches                : 1274
+#      FD                          : 7
+#      FDR                         : 450
+#      FDRE                        : 815
+#      FDS                         : 2
+# RAMS                             : 3
+#      RAMB18E1                    : 1
+#      RAMB36E1                    : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 550
+#      IBUF                        : 148
+#      OBUF                        : 402
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k325tffg676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1274  out of  407600     0%  
+ Number of Slice LUTs:                  969  out of  203800     0%  
+    Number used as Logic:               969  out of  203800     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1479
+   Number with an unused Flip Flop:     205  out of   1479    13%  
+   Number with an unused LUT:           510  out of   1479    34%  
+   Number of fully used LUT-FF pairs:   764  out of   1479    51%  
+   Number of unique control sets:        21
+
+IO Utilization: 
+ Number of IOs:                         811
+ Number of bonded IOBs:                 551  out of    400   137% (*) 
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                3  out of    445     0%  
+    Number using Block RAM only:          3
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+asclk                              | BUFGP                  | 1277  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------+----------------------------------+-------+
+Control Signal                                                             | Buffer(FF name)                  | Load  |
+---------------------------------------------------------------------------+----------------------------------+-------+
+s_axis_tvalid_s_axis_tready_AND_9_o(s_axis_tvalid_s_axis_tready_AND_9_o1:O)| NONE(input_fifo/fifo/Mram_queue2)| 2     |
+---------------------------------------------------------------------------+----------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.124ns (Maximum Frequency: 320.150MHz)
+   Minimum input arrival time before clock: 1.728ns
+   Maximum output required time after clock: 1.376ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'asclk'
+  Clock period: 3.124ns (frequency: 320.150MHz)
+  Total number of paths / destination ports: 14676 / 2038
+-------------------------------------------------------------------------
+Delay:               3.124ns (Levels of Logic = 5)
+  Source:            header_parser/ip_hlen_2 (FF)
+  Destination:       header_parser/tp_dst_15 (FF)
+  Source Clock:      asclk rising
+  Destination Clock: asclk rising
+
+  Data Path: header_parser/ip_hlen_2 to header_parser/tp_dst_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              9   0.282   0.655  header_parser/ip_hlen_2 (header_parser/ip_hlen_2)
+     LUT3:I0->O            5   0.053   0.440  header_parser/Msub_GND_6_o_GND_6_o_sub_204_OUT<7:0>_cy<3>11 (header_parser/Msub_GND_6_o_GND_6_o_sub_204_OUT<7:0>_cy<3>)
+     LUT6:I5->O            6   0.053   0.446  header_parser/GND_6_o_GND_6_o_equal_209_o<7>1 (header_parser/GND_6_o_GND_6_o_equal_209_o)
+     LUT6:I5->O            8   0.053   0.459  header_parser/tp_dst_nxt<0>41_2 (header_parser/tp_dst_nxt<0>411)
+     LUT6:I5->O           32   0.053   0.566  header_parser/tp_dst_nxt<0>2 (header_parser/tp_dst_nxt<0>2)
+     LUT6:I5->O            1   0.053   0.000  header_parser/tp_src_nxt<15> (header_parser/tp_src_nxt<15>)
+     FDR:D                     0.011          header_parser/tp_src_15
+    ----------------------------------------
+    Total                      3.124ns (0.558ns logic, 2.566ns route)
+                                       (17.9% logic, 82.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'asclk'
+  Total number of paths / destination ports: 1443 / 1442
+-------------------------------------------------------------------------
+Offset:              1.728ns (Levels of Logic = 2)
+  Source:            aresetn (PAD)
+  Destination:       header_parser/ip_dst_31 (FF)
+  Destination Clock: asclk rising
+
+  Data Path: aresetn to header_parser/ip_dst_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.000   0.798  aresetn_IBUF (aresetn_IBUF)
+     LUT6:I0->O           32   0.053   0.552  header_parser/Reset_OR_DriverANDClockEnable322 (header_parser/Reset_OR_DriverANDClockEnable)
+     FDRE:R                    0.325          header_parser/ip_dst_0
+    ----------------------------------------
+    Total                      1.728ns (0.378ns logic, 1.350ns route)
+                                       (21.9% logic, 78.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'asclk'
+  Total number of paths / destination ports: 394 / 392
+-------------------------------------------------------------------------
+Offset:              1.376ns (Levels of Logic = 2)
+  Source:            input_fifo/fifo/depth_2 (FF)
+  Destination:       s_axis_tready (PAD)
+  Source Clock:      asclk rising
+
+  Data Path: input_fifo/fifo/depth_2 to s_axis_tready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             7   0.282   0.642  input_fifo/fifo/depth_2 (input_fifo/fifo/depth_2)
+     LUT3:I0->O            1   0.053   0.399  s_axis_tready1 (s_axis_tready_OBUF)
+     OBUF:I->O                 0.000          s_axis_tready_OBUF (s_axis_tready)
+    ----------------------------------------
+    Total                      1.376ns (0.335ns logic, 1.041ns route)
+                                       (24.3% logic, 75.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock asclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+asclk          |    3.124|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.55 secs
+ 
+--> 
+
+Total memory usage is 428572 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  191 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
+

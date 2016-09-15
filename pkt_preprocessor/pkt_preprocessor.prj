@@ -1,0 +1,5 @@
+verilog work "small_fifo_v3.v"
+verilog work "lu_entry_composer.v"
+verilog work "header_parser.v"
+verilog work "fallthrough_small_fifo_v2.v"
+verilog work "pkt_preprocessor.v"
