@@ -1,0 +1,13 @@
+verilog work ../example_design/Ethernet_sync_block.v
+verilog work ../example_design/Ethernet_reset_sync.v
+verilog work ../example_design/transceiver/Ethernet_gtwizard_gt.v
+verilog work ../example_design/transceiver/Ethernet_gtwizard.v
+verilog work ../example_design/transceiver/Ethernet_tx_startup_fsm.v
+verilog work ../example_design/transceiver/Ethernet_rx_startup_fsm.v
+verilog work ../example_design/transceiver/Ethernet_gtwizard_init.v
+verilog work ../example_design/transceiver/Ethernet_transceiver.v
+verilog work ../example_design/Ethernet_tx_elastic_buffer.v
+verilog work ../example_design/Ethernet_mod.v
+verilog work ../example_design/Ethernet_block.v
+verilog work ../example_design/Ethernet_example_design.v
+

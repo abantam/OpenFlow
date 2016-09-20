@@ -8,3 +8,4 @@ map -intstyle ise -p xc7k325t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -re
 xst -intstyle ise -ifn "G:/openflow1.3/pkt_preprocessor/pkt_preprocessor.xst" -ofn "G:/openflow1.3/pkt_preprocessor/pkt_preprocessor.syr" 
 ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k325t-ffg676-1 pkt_preprocessor.ngc pkt_preprocessor.ngd  
 map -intstyle ise -p xc7k325t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o pkt_preprocessor_map.ncd pkt_preprocessor.ngd pkt_preprocessor.pcf 
+map -intstyle ise -p xc7k325t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o pkt_preprocessor_map.ncd pkt_preprocessor.ngd pkt_preprocessor.pcf 

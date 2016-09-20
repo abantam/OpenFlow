@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-fedorawithnetfpga::  Thu Sep 15 20:01:44 2016
+fedorawithnetfpga::  Mon Sep 19 19:55:09 2016
 
 par -w -intstyle ise -ol high -mt off dl_parser_map.ncd dl_parser.ncd
 dl_parser.pcf 
@@ -112,7 +112,7 @@ Phase  2  : 15 unrouted;      REAL time: 22 secs
 
 Phase  3  : 0 unrouted;      REAL time: 22 secs 
 
-Phase  4  : 0 unrouted; (Par is working to improve performance)     REAL time: 32 secs 
+Phase  4  : 0 unrouted; (Par is working to improve performance)     REAL time: 31 secs 
 
 Updating file: dl_parser.ncd with current fully routed design.
 
@@ -126,7 +126,7 @@ Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 3
 
 Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 32 secs 
 Total REAL time to Router completion: 32 secs 
-Total CPU time to Router completion: 32 secs 
+Total CPU time to Router completion: 31 secs 
 
 Partition Implementation Status
 -------------------------------

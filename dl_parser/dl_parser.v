@@ -105,6 +105,15 @@ module dl_parser
 				  
 	//--------------------Wires/Regs--------------------
 	
+	//Endian Conversion
+	wire [C_AXIS_DATA_WIDTH-1:0] be_tx_data_infifo;
+	reg [C_AXIS_DATA_WIDTH-1:0] be_tx_data;
+	wire [(C_AXIS_DATA_WIDTH/8)-1:0] be_tx_strb_infifo;
+	reg [(C_AXIS_DATA_WIDTH/8)-1:0] be_tx_strb;
+	
+	reg [C_AXIS_LEN_DATA_WIDTH-1:0] tx_len_data_int;
+	reg [C_AXIS_SPT_DATA_WIDTH-1:0] tx_spt_data_int;
+	
    //Data read State machine
 	reg [NUM_DT_RD_STATES-1:0] dt_rd_state, dt_rd_state_nxt;
 	reg tx_valid_int, tx_valid_int_nxt;
@@ -174,25 +183,47 @@ module dl_parser
 		end
 	end
 	
+	//assign vlan_msb_nxt = ((be_tx_data_infifo[63:48] == `TYPE_VLAN) || (be_tx_data_infifo[63:48] == `TYPE_VLAN_QINQ)) ? 1 : 0;
+	//assign vlan_lsb_nxt = ((be_tx_data_infifo[31:16] == `TYPE_VLAN) || (be_tx_data_infifo[31:16] == `TYPE_VLAN_QINQ)) ? 1 : 0;
+	
+	always @(posedge asclk) begin
+		if(~aresetn) begin
+			be_tx_data <= 0;
+			be_tx_strb <= 0;
+			tx_len_data_int <= 0;
+			tx_spt_data_int <= 0;
+			vlan_msb <= 0;
+			vlan_lsb <= 0;
+		end
+		else begin
+			be_tx_data <= be_tx_data_infifo;
+			be_tx_strb <= be_tx_strb_infifo;
+			tx_len_data_int <= tx_len_data;
+			tx_spt_data_int <= tx_spt_data;
+			vlan_msb <= vlan_msb_nxt;
+			vlan_lsb <= vlan_lsb_nxt;
+		end
+	end
+	
 	//DL parsing
 	always @* begin
-		//dl_start_nxt = 0;
-		//pkt_len_nxt = pkt_len;
-		//src_port_nxt = src_port;
-		//dl_dst_nxt = dl_dst;
-		//dl_src_nxt = dl_src;
-		//dl_ethtype_nxt = dl_ethtype;
-		//dl_vlantag_nxt = dl_vlantag;
+		dl_start_nxt = 0;
+		pkt_len_nxt = pkt_len;
+		src_port_nxt = src_port;
+		dl_dst_nxt = dl_dst;
+		dl_src_nxt = dl_src;
+		dl_ethtype_nxt = dl_ethtype;
+		dl_vlantag_nxt = dl_vlantag;
 		
-		//dl_tdata_nxt = be_tx_data;
-		//dl_tdata16_buf_nxt = dl_tdata16_buf;
-		//dl_tdata48_buf_nxt = dl_tdata48_buf;
+		dl_tdata_nxt = be_tx_data;
+		dl_tdata16_buf_nxt = dl_tdata16_buf;
+		dl_tdata48_buf_nxt = dl_tdata48_buf;
 		
-		//dl_done_nxt = 0;
-		//ip_start_nxt = 0;
-		//arp_start_nxt = 0;
-		//dl_valid_nxt = 0;
-		//dl_state_nxt = dl_state;
+		dl_done_nxt = 0;
+		ip_start_nxt = 0;
+		arp_start_nxt = 0;
+		dl_valid_nxt = 0;
+		dl_state_nxt = dl_state;
 		
 		case(dl_state)
 			DL_WAIT_TVALID: begin

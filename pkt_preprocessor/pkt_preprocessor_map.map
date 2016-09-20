@@ -1,4 +1,4 @@
-Release 14.7 Map P.20131013 (nt64)
+Release 14.7 Map P.20131013 (lin64)
 Xilinx Map Application Log File for Design 'pkt_preprocessor'
 
 Design Information
@@ -11,7 +11,7 @@ Target Device  : xc7k325t
 Target Package : ffg676
 Target Speed   : -1
 Mapper Version : kintex7 -- $Revision: 1.55 $
-Mapped Date    : FRI 9 SEP 23:55:14 2016
+Mapped Date    : Mon Sep 19 17:19:23 2016
 
 WARNING:LIT:701 - PAD symbol "asclk" has an undefined IOSTANDARD.
 WARNING:LIT:702 - PAD symbol "asclk" is not constrained (LOC) to a specific

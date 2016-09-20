@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="321" delta="new" >"/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/gig_eth_pcs_pma_v11_5/rx/rx.vhd" Line 846: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/Ethernet.vhd</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">tx_code_group</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/Ethernet.vhd</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">drp_daddr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/Ethernet.vhd</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">drp_di</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/Ethernet.vhd</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">rxphy_s_field</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/Ethernet.vhd</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">rxphy_ns_field</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/Ethernet.vhd</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">loc_ref</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/Ethernet.vhd</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">ewrap</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/Ethernet.vhd</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">en_cdet</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/Ethernet.vhd</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">an_interrupt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/Ethernet.vhd</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">mdio_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/Ethernet.vhd</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">mdio_tri</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/Ethernet.vhd</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">drp_req</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/Ethernet.vhd</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">drp_den</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/Ethernet.vhd</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">drp_dwe</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">link_timer_value</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">link_timer_basex</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">link_timer_sgmii</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rx_code_group0</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rx_code_group1</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">phyad</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">an_adv_config_vector</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">drp_do</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">systemtimer_s_field</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">systemtimer_ns_field</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">gtx_clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">pma_rx_clk0</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">pma_rx_clk1</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">mdc</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">mdio_in</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">an_adv_config_val</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">an_restart_config</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">configuration_valid</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">basex_or_sgmii</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">drp_dclk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">drp_gnt</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">drp_drdy</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rxrecclk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">LINK_TIMER_VALUE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">LINK_TIMER_BASEX</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">LINK_TIMER_SGMII</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">RX_CODE_GROUP0</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">RX_CODE_GROUP1</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">PHYAD</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">AN_ADV_CONFIG_VECTOR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">DRP_DO</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">SYSTEMTIMER_S_FIELD</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">SYSTEMTIMER_NS_FIELD</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">GTX_CLK</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">PMA_RX_CLK0</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">PMA_RX_CLK1</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">MDC</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">MDIO_IN</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">CONFIGURATION_VALID</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">AN_ADV_CONFIG_VAL</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">AN_RESTART_CONFIG</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">BASEX_OR_SGMII</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">DRP_DCLK</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">DRP_GNT</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">DRP_DRDY</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">RXRECCLK</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/gig_eth_pcs_pma_v11_5/gpcs_pma_gen.vhd</arg>&quot; line <arg fmt="%s" index="2">871</arg>: Output port &lt;<arg fmt="%s" index="3">RX_CONFIG_REG</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RECEIVER</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/gig_eth_pcs_pma_v11_5/gpcs_pma_gen.vhd</arg>&quot; line <arg fmt="%s" index="2">871</arg>: Output port &lt;<arg fmt="%s" index="3">RECEIVING</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RECEIVER</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/gig_eth_pcs_pma_v11_5/gpcs_pma_gen.vhd</arg>&quot; line <arg fmt="%s" index="2">871</arg>: Output port &lt;<arg fmt="%s" index="3">RX_IDLE</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RECEIVER</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/shimizu/openflow1.3/Connection/ipcore_dir/tmp/_cg/_dbg/gig_eth_pcs_pma_v11_5/gpcs_pma_gen.vhd</arg>&quot; line <arg fmt="%s" index="2">871</arg>: Output port &lt;<arg fmt="%s" index="3">RX_CONFIG_VALID</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">RECEIVER</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">TX_CODE_GROUP</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">LOC_REF</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">EWRAP</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">EN_CDET</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">DUPLEX_MODE_RSLVD_REG</arg>&lt;<arg fmt="%d" index="2">0</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">GPCS_PMA_GEN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">STATUS_VECTOR&lt;12&gt;</arg>&lt;<arg fmt="%d" index="2">0</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">GPCS_PMA_GEN</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2774" delta="new" >HDL ADVISOR - <arg fmt="%s" index="1">ASYNC_REG</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">RESET_INT</arg> may hinder XST clustering optimizations.
+</msg>
+
+<msg type="info" file="Xst" num="2774" delta="new" >HDL ADVISOR - <arg fmt="%s" index="1">KEEP</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">SRESET_PIPE_PWR_15_o_MUX_1_o</arg> may hinder XST clustering optimizations.
+</msg>
+
+<msg type="warning" file="Xst" num="3136" delta="new" >Property &quot;<arg fmt="%s" index="1">shreg_extract</arg>&quot; (value &quot;<arg fmt="%s" index="2">no</arg>&quot;) has not been applied on proper HDL object.
+</msg>
+
+<msg type="warning" file="Xst" num="3136" delta="new" >Property &quot;<arg fmt="%s" index="1">shreg_extract</arg>&quot; (value &quot;<arg fmt="%s" index="2">no</arg>&quot;) has not been applied on proper HDL object.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">RXBUFSTATUS&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">RXBUFSTATUS&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">RXRUNDISP</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">GPCS_PMA_GEN</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">RXRECRESET_PIPE</arg> and <arg fmt="%s" index="3">RXRECRESET</arg> <arg fmt="%s" index="4">RXRECRESET</arg> signal will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_CODE_GRP_CNT[1]_GND_22_o_Mux_5_o</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CONFIGURATION_VECTOR_REG_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">GPCS_PMA_GEN</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">CONFIG_DATA_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TX</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;CONFIG_DATA_4&gt; &lt;CONFIG_DATA_5&gt; &lt;CONFIG_DATA_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">CONFIG_DATA_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TX</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;CONFIG_DATA_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">CONFIG_DATA_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TX</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;CONFIG_K28p5&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RXBUFSTATUS_INT_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RXRUNDISP_INT</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_INVALID_REG2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_INVALID_REG1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RX_CONFIG_REG_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/RECEIVING</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/TRANSMITTER/K28p5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Ethernet</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/FROM_RX_K</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Ethernet</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/FROM_IDLE_D</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Ethernet</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/RECEIVER/K28p5_REG2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/gpcs_pma_inst/TRANSMITTER/SYNC_DISPARITY</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Ethernet</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U0/gpcs_pma_inst/TRANSMITTER/INSERT_IDLE&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

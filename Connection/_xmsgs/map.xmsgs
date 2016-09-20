@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="LIT" num="701" delta="new" ><arg fmt="%s" index="1">PAD symbol &quot;userclk2&quot;</arg> has an undefined IOSTANDARD.
+</msg>
+
+<msg type="warning" file="LIT" num="702" delta="new" ><arg fmt="%s" index="1">PAD symbol &quot;userclk2&quot;</arg> is not constrained (LOC) to a specific location.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">rxbufstatus_0_IBUF</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">3</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">rxrundisp_0_IBUF,
+configuration_vector_4_IBUF,
+configuration_vector_0_IBUF</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">rxbufstatus&lt;0&gt;</arg> connected to top level port <arg fmt="%s" index="2">rxbufstatus&lt;0&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">rxrundisp&lt;0&gt;</arg> connected to top level port <arg fmt="%s" index="2">rxrundisp&lt;0&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">configuration_vector&lt;4&gt;</arg> connected to top level port <arg fmt="%s" index="2">configuration_vector&lt;4&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">configuration_vector&lt;0&gt;</arg> connected to top level port <arg fmt="%s" index="2">configuration_vector&lt;0&gt;</arg> has been removed.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="new" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="info" file="Pack" num="1716" delta="new" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
+</msg>
+
+<msg type="info" file="Pack" num="1720" delta="new" >Initializing voltage to <arg fmt="%0.3f" index="1">0.970</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">0.970</arg> to <arg fmt="%0.3f" index="3">1.030</arg> Volts)
+</msg>
+
+<msg type="info" file="Map" num="215" delta="new" >The Interim Design Summary has been generated in the MAP Report (.mrp).
+</msg>
+
+<msg type="info" file="Pack" num="1650" delta="new" >Map created a placed design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;0&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;4&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;3&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;2&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;1&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">reset</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;8&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;7&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;6&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;5&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;9&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">mgt_rx_reset</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">mgt_tx_reset</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_txd&lt;7&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_txd&lt;6&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_txd&lt;5&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_txd&lt;4&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_txd&lt;3&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_txd&lt;2&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_txd&lt;1&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_txd&lt;0&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">txcharisk</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">txchardispmode</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxclkcorcnt&lt;2&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxclkcorcnt&lt;1&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxclkcorcnt&lt;0&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">dcm_locked</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxbufstatus&lt;1&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxchariscomma&lt;0&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">signal_detect</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxdisperr&lt;0&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">txchardispval</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">enablealign</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">txdata&lt;7&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">txdata&lt;5&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">txdata&lt;6&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">txdata&lt;3&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">txdata&lt;4&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">txdata&lt;1&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">txdata&lt;2&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">txdata&lt;0&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxdata&lt;7&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxdata&lt;5&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxdata&lt;6&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxdata&lt;3&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxdata&lt;4&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxdata&lt;1&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxdata&lt;2&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxdata&lt;0&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">configuration_vector&lt;2&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">configuration_vector&lt;1&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">configuration_vector&lt;3&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_rxd&lt;7&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_rxd&lt;6&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_rxd&lt;5&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">powerdown</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_rxd&lt;4&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_rxd&lt;3&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_rxd&lt;2&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_rxd&lt;1&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_rxd&lt;0&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxnotintable&lt;0&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">userclk</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">rxcharisk&lt;0&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_tx_er</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_tx_en</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;10&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;12&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;11&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;14&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;13&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">status_vector&lt;15&gt;</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_isolate</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_rx_er</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">gmii_rx_dv</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">userclk2</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2452" delta="new" >The IOB <arg fmt="%s" index="1">txbuferr</arg> is either not constrained (LOC) to a specific location and/or has an undefined I/O Standard (IOSTANDARD). This condition may seriously affect the device and will be an error in bitstream creation. It should be corrected by properly specifying the pin location and I/O Standard.
+</msg>
+
+</messages>
+

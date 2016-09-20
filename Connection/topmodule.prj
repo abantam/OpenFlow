@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/Ethernet.v"
+verilog work "topmodule.v"

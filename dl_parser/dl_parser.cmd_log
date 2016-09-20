@@ -53,3 +53,21 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg676-1 dl_parser.
 map -intstyle ise -p xc7k325t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dl_parser_map.ncd dl_parser.ngd dl_parser.pcf 
 par -w -intstyle ise -ol high -mt off dl_parser_map.ncd dl_parser.ncd dl_parser.pcf 
 trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dl_parser.twx dl_parser.ncd -o dl_parser.twr dl_parser.pcf 
+xst -intstyle ise -ifn "/home/shimizu/openflow1.3/dl_parser/dl_parser.xst" -ofn "/home/shimizu/openflow1.3/dl_parser/dl_parser.syr" 
+xst -intstyle ise -ifn "/home/shimizu/openflow1.3/dl_parser/dl_parser.xst" -ofn "/home/shimizu/openflow1.3/dl_parser/dl_parser.syr" 
+xst -intstyle ise -ifn "/home/shimizu/openflow1.3/dl_parser/dl_parser.xst" -ofn "/home/shimizu/openflow1.3/dl_parser/dl_parser.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg676-1 dl_parser.ngc dl_parser.ngd  
+map -intstyle ise -p xc7k325t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dl_parser_map.ncd dl_parser.ngd dl_parser.pcf 
+par -w -intstyle ise -ol high -mt off dl_parser_map.ncd dl_parser.ncd dl_parser.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dl_parser.twx dl_parser.ncd -o dl_parser.twr dl_parser.pcf 
+xst -intstyle ise -ifn "/home/shimizu/openflow1.3/dl_parser/dl_parser.xst" -ofn "/home/shimizu/openflow1.3/dl_parser/dl_parser.syr" 
+xst -intstyle ise -ifn "/home/shimizu/openflow1.3/dl_parser/dl_parser.xst" -ofn "/home/shimizu/openflow1.3/dl_parser/dl_parser.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg676-1 dl_parser.ngc dl_parser.ngd  
+map -intstyle ise -p xc7k325t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dl_parser_map.ncd dl_parser.ngd dl_parser.pcf 
+par -w -intstyle ise -ol high -mt off dl_parser_map.ncd dl_parser.ncd dl_parser.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dl_parser.twx dl_parser.ncd -o dl_parser.twr dl_parser.pcf 
+xst -intstyle ise -ifn "/home/shimizu/openflow1.3/dl_parser/dl_parser.xst" -ofn "/home/shimizu/openflow1.3/dl_parser/dl_parser.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg676-1 dl_parser.ngc dl_parser.ngd  
+map -intstyle ise -p xc7k325t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o dl_parser_map.ncd dl_parser.ngd dl_parser.pcf 
+par -w -intstyle ise -ol high -mt off dl_parser_map.ncd dl_parser.ncd dl_parser.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dl_parser.twx dl_parser.ncd -o dl_parser.twr dl_parser.pcf 

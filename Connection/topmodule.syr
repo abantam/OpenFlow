@@ -1,0 +1,433 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: topmodule.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "topmodule.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "topmodule"
+Output Format                      : NGC
+Target Device                      : xc7k325t-1-ffg676
+
+---- Source Options
+Top Module Name                    : topmodule
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/shimizu/openflow1.3/Connection/ipcore_dir/Ethernet.v" into library work
+Parsing module <Ethernet>.
+Analyzing Verilog file "/home/shimizu/openflow1.3/Connection/topmodule.v" into library work
+Parsing module <topmodule>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <topmodule>.
+
+Elaborating module <Ethernet>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <topmodule>.
+    Related source file is "/home/shimizu/openflow1.3/Connection/topmodule.v".
+    Summary:
+	no macro.
+Unit <topmodule> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/Ethernet.ngc>.
+Loading core <Ethernet> for timing and area information for instance <eth0>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <topmodule> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block topmodule, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : topmodule.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 185
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 34
+#      LUT3                        : 36
+#      LUT4                        : 44
+#      LUT5                        : 17
+#      LUT6                        : 45
+#      MUXF7                       : 6
+#      VCC                         : 1
+# FlipFlops/Latches                : 180
+#      FD                          : 56
+#      FDE                         : 11
+#      FDP                         : 2
+#      FDR                         : 101
+#      FDRE                        : 3
+#      FDS                         : 6
+#      FDSE                        : 1
+# Shift Registers                  : 15
+#      SRL16                       : 2
+#      SRLC16E                     : 13
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 79
+#      IBUF                        : 37
+#      OBUF                        : 42
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k325tffg676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             180  out of  407600     0%  
+ Number of Slice LUTs:                  192  out of  203800     0%  
+    Number used as Logic:               177  out of  203800     0%  
+    Number used as Memory:               15  out of  64000     0%  
+       Number used as SRL:               15
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    237
+   Number with an unused Flip Flop:      57  out of    237    24%  
+   Number with an unused LUT:            45  out of    237    18%  
+   Number of fully used LUT-FF pairs:   135  out of    237    56%  
+   Number of unique control sets:        13
+
+IO Utilization: 
+ Number of IOs:                          81
+ Number of bonded IOBs:                  81  out of    400    20%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+userclk2                           | BUFGP                  | 193   |
+userclk                            | BUFGP                  | 2     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.197ns (Maximum Frequency: 455.166MHz)
+   Minimum input arrival time before clock: 2.275ns
+   Maximum output required time after clock: 0.836ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'userclk2'
+  Clock period: 2.197ns (frequency: 455.166MHz)
+  Total number of paths / destination ports: 893 / 290
+-------------------------------------------------------------------------
+Delay:               2.197ns (Levels of Logic = 2)
+  Source:            eth0/U0/gpcs_pma_inst/RXBUFSTATUS_INT_1 (FF)
+  Destination:       eth0/U0/gpcs_pma_inst/SYNCHRONISATION/GOOD_CGS_1 (FF)
+  Source Clock:      userclk2 rising
+  Destination Clock: userclk2 rising
+
+  Data Path: eth0/U0/gpcs_pma_inst/RXBUFSTATUS_INT_1 to eth0/U0/gpcs_pma_inst/SYNCHRONISATION/GOOD_CGS_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.282   0.745  U0/gpcs_pma_inst/RXBUFSTATUS_INT_1 (U0/gpcs_pma_inst/RXBUFSTATUS_INT<1>)
+     LUT5:I0->O            8   0.053   0.459  U0/gpcs_pma_inst/SYNCHRONISATION/CGBAD1 (U0/gpcs_pma_inst/SYNCHRONISATION/CGBAD)
+     LUT5:I4->O            2   0.053   0.405  U0/gpcs_pma_inst/SYNCHRONISATION/_n0103_inv1 (U0/gpcs_pma_inst/SYNCHRONISATION/_n0103_inv)
+     FDRE:CE                   0.200          U0/gpcs_pma_inst/SYNCHRONISATION/GOOD_CGS_0
+    ----------------------------------------
+    Total                      2.197ns (0.588ns logic, 1.609ns route)
+                                       (26.8% logic, 73.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'userclk'
+  Clock period: 0.692ns (frequency: 1445.087MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               0.692ns (Levels of Logic = 0)
+  Source:            eth0/U0/gpcs_pma_inst/RESET_INT_PIPE (FF)
+  Destination:       eth0/U0/gpcs_pma_inst/RESET_INT (FF)
+  Source Clock:      userclk rising
+  Destination Clock: userclk rising
+
+  Data Path: eth0/U0/gpcs_pma_inst/RESET_INT_PIPE to eth0/U0/gpcs_pma_inst/RESET_INT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.282   0.399  U0/gpcs_pma_inst/RESET_INT_PIPE (U0/gpcs_pma_inst/RESET_INT_PIPE)
+     FDP:D                     0.011          U0/gpcs_pma_inst/RESET_INT
+    ----------------------------------------
+    Total                      0.692ns (0.293ns logic, 0.399ns route)
+                                       (42.3% logic, 57.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'userclk2'
+  Total number of paths / destination ports: 45 / 36
+-------------------------------------------------------------------------
+Offset:              2.275ns (Levels of Logic = 5)
+  Source:            gmii_txd<3> (PAD)
+  Destination:       eth0/U0/gpcs_pma_inst/TRANSMITTER/V (FF)
+  Destination Clock: userclk2 rising
+
+  Data Path: gmii_txd<3> to eth0/U0/gpcs_pma_inst/TRANSMITTER/V
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.000   0.745  gmii_txd_3_IBUF (gmii_txd_3_IBUF)
+     begin scope: 'eth0:gmii_txd<3>'
+     LUT6:I0->O            1   0.053   0.635  U0/gpcs_pma_inst/TRANSMITTER/TX_EN_REG1_XMIT_DATA_INT_AND_20_o1 (U0/gpcs_pma_inst/TRANSMITTER/TX_EN_REG1_XMIT_DATA_INT_AND_20_o1)
+     LUT6:I2->O            1   0.053   0.725  U0/gpcs_pma_inst/TRANSMITTER/TX_EN_REG1_XMIT_DATA_INT_AND_20_o2 (U0/gpcs_pma_inst/TRANSMITTER/TX_EN_REG1_XMIT_DATA_INT_AND_20_o2)
+     LUT6:I1->O            1   0.053   0.000  U0/gpcs_pma_inst/TRANSMITTER/V_glue_set (U0/gpcs_pma_inst/TRANSMITTER/V_glue_set)
+     FDR:D                     0.011          U0/gpcs_pma_inst/TRANSMITTER/V
+    ----------------------------------------
+    Total                      2.275ns (0.170ns logic, 2.105ns route)
+                                       (7.5% logic, 92.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'userclk'
+  Total number of paths / destination ports: 4 / 2
+-------------------------------------------------------------------------
+Offset:              1.268ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       eth0/U0/gpcs_pma_inst/RESET_INT (FF)
+  Destination Clock: userclk rising
+
+  Data Path: reset to eth0/U0/gpcs_pma_inst/RESET_INT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.000   0.485  reset_IBUF (reset_IBUF)
+     begin scope: 'eth0:reset'
+     LUT2:I0->O            2   0.053   0.405  U0/gpcs_pma_inst/DCM_LOCKED_SOFT_RESET_OR_2_o1 (U0/gpcs_pma_inst/DCM_LOCKED_SOFT_RESET_OR_2_o)
+     FDP:PRE                   0.325          U0/gpcs_pma_inst/RESET_INT_PIPE
+    ----------------------------------------
+    Total                      1.268ns (0.378ns logic, 0.890ns route)
+                                       (29.8% logic, 70.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'userclk2'
+  Total number of paths / destination ports: 33 / 33
+-------------------------------------------------------------------------
+Offset:              0.836ns (Levels of Logic = 2)
+  Source:            eth0/U0/gpcs_pma_inst/MGT_RX_RESET_INT (FF)
+  Destination:       mgt_rx_reset (PAD)
+  Source Clock:      userclk2 rising
+
+  Data Path: eth0/U0/gpcs_pma_inst/MGT_RX_RESET_INT to mgt_rx_reset
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             43   0.282   0.554  U0/gpcs_pma_inst/MGT_RX_RESET_INT (mgt_rx_reset)
+     end scope: 'eth0:mgt_rx_reset'
+     OBUF:I->O                 0.000          mgt_rx_reset_OBUF (mgt_rx_reset)
+    ----------------------------------------
+    Total                      0.836ns (0.282ns logic, 0.554ns route)
+                                       (33.7% logic, 66.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock userclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+userclk        |    0.692|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock userclk2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+userclk        |    1.597|         |         |         |
+userclk2       |    2.197|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.14 secs
+ 
+--> 
+
+
+Total memory usage is 603088 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

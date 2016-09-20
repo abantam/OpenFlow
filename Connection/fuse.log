@@ -1,0 +1,41 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/shimizu/openflow1.3/Connection/topmodule_isim_beh.exe -prj /home/shimizu/openflow1.3/Connection/topmodule_beh.prj work.topmodule work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/shimizu/openflow1.3/Connection/ipcore_dir/Ethernet.v" into library work
+Analyzing Verilog file "/home/shimizu/openflow1.3/Connection/topmodule.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+WARNING:HDLCompiler:687 - "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 99568 KB
+Fuse CPU Usage: 1020 ms
+Compiling module VCC
+Compiling module GND
+Compiling module SRL16
+Compiling module FDR
+Compiling module FD
+Compiling module FDS
+Compiling module FDP
+Compiling module FDSE
+Compiling module FDRE
+Compiling module LUT4(INIT=16'b1110101001101010)
+Compiling module LUT2(INIT=4'b0100)
+Compiling module LUT3(INIT=8'b11100100)
+Compiling module LUT6(INIT=64'b111111111111111111...
+Compiling module LUT5(INIT=32'b111010001000000110...
+Compiling module MUXF7
+Compiling module INV
+Compiling module SRLC16E
+Compiling module FDE
+Compiling module Ethernet
+Compiling module topmodule
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 6 sub-compilation(s) to finish...
+Compiled 118 Verilog Units
+Built simulation executable /home/shimizu/openflow1.3/Connection/topmodule_isim_beh.exe
+Fuse Memory Usage: 1184832 KB
+Fuse CPU Usage: 1330 ms
+GCC CPU Usage: 2270 ms

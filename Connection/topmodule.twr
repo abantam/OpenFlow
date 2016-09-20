@@ -1,0 +1,150 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 1 -n
+3 -fastpaths -xml topmodule.twx topmodule.ncd -o topmodule.twr topmodule.pcf
+-ucf topmodule.ucf
+
+Design file:              topmodule.ncd
+Physical constraint file: topmodule.pcf
+Device,package,speed:     xc7k325t,ffg676,C,-1 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock userclk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+dcm_locked  |    0.040(R)|      FAST  |    2.070(R)|      SLOW  |userclk_BUFGP     |   0.000|
+reset       |    0.072(R)|      FAST  |    2.027(R)|      SLOW  |userclk_BUFGP     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock userclk2
+-----------------------+------------+------------+------------+------------+------------------+--------+
+                       |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source                 | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-----------------------+------------+------------+------------+------------+------------------+--------+
+configuration_vector<1>|    0.773(R)|      FAST  |    1.095(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+configuration_vector<2>|    0.457(R)|      FAST  |    1.670(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+configuration_vector<3>|    0.429(R)|      FAST  |    1.648(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+gmii_tx_en             |    0.220(R)|      FAST  |    2.859(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+gmii_tx_er             |    0.433(R)|      FAST  |    2.435(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+gmii_txd<0>            |    0.345(R)|      FAST  |    2.331(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+gmii_txd<1>            |    0.193(R)|      FAST  |    2.202(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+gmii_txd<2>            |    0.244(R)|      FAST  |    2.460(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+gmii_txd<3>            |    0.316(R)|      FAST  |    2.125(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+gmii_txd<4>            |    0.302(R)|      FAST  |    1.972(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+gmii_txd<5>            |    0.257(R)|      FAST  |    2.128(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+gmii_txd<6>            |    0.497(R)|      FAST  |    1.410(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+gmii_txd<7>            |    0.327(R)|      FAST  |    1.861(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxbufstatus<1>         |   -0.231(R)|      FAST  |    2.702(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxchariscomma<0>       |   -0.385(R)|      FAST  |    2.957(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxcharisk<0>           |   -0.469(R)|      FAST  |    3.056(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxclkcorcnt<0>         |   -0.211(R)|      FAST  |    2.685(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxclkcorcnt<1>         |   -0.250(R)|      FAST  |    2.752(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxclkcorcnt<2>         |   -0.182(R)|      FAST  |    2.631(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxdata<0>              |   -0.405(R)|      FAST  |    3.000(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxdata<1>              |   -0.376(R)|      FAST  |    2.916(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxdata<2>              |   -0.345(R)|      FAST  |    2.916(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxdata<3>              |   -0.284(R)|      FAST  |    2.762(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxdata<4>              |   -0.280(R)|      FAST  |    2.786(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxdata<5>              |   -0.308(R)|      FAST  |    2.834(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxdata<6>              |   -0.387(R)|      FAST  |    2.959(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxdata<7>              |   -0.190(R)|      FAST  |    2.658(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxdisperr<0>           |   -0.184(R)|      FAST  |    2.664(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+rxnotintable<0>        |   -0.130(R)|      FAST  |    2.609(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+signal_detect          |    0.430(R)|      FAST  |    1.567(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+txbuferr               |    0.496(R)|      FAST  |    1.486(R)|      SLOW  |userclk2_BUFGP    |   0.000|
+-----------------------+------------+------------+------------+------------+------------------+--------+
+
+Clock userclk2 to Pad
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+                |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination     |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+enablealign     |        10.684(R)|      SLOW  |         4.286(R)|      FAST  |userclk2_BUFGP    |   0.000|
+gmii_isolate    |        10.749(R)|      SLOW  |         4.416(R)|      FAST  |userclk2_BUFGP    |   0.000|
+gmii_rx_dv      |        10.416(R)|      SLOW  |         4.193(R)|      FAST  |userclk2_BUFGP    |   0.000|
+gmii_rx_er      |        10.552(R)|      SLOW  |         4.271(R)|      FAST  |userclk2_BUFGP    |   0.000|
+gmii_rxd<0>     |        10.509(R)|      SLOW  |         4.248(R)|      FAST  |userclk2_BUFGP    |   0.000|
+gmii_rxd<1>     |        10.229(R)|      SLOW  |         4.112(R)|      FAST  |userclk2_BUFGP    |   0.000|
+gmii_rxd<2>     |        10.758(R)|      SLOW  |         4.388(R)|      FAST  |userclk2_BUFGP    |   0.000|
+gmii_rxd<3>     |        10.866(R)|      SLOW  |         4.446(R)|      FAST  |userclk2_BUFGP    |   0.000|
+gmii_rxd<4>     |        10.681(R)|      SLOW  |         4.329(R)|      FAST  |userclk2_BUFGP    |   0.000|
+gmii_rxd<5>     |        10.354(R)|      SLOW  |         4.155(R)|      FAST  |userclk2_BUFGP    |   0.000|
+gmii_rxd<6>     |        10.736(R)|      SLOW  |         4.374(R)|      FAST  |userclk2_BUFGP    |   0.000|
+gmii_rxd<7>     |        10.702(R)|      SLOW  |         4.363(R)|      FAST  |userclk2_BUFGP    |   0.000|
+mgt_rx_reset    |        10.947(R)|      SLOW  |         4.499(R)|      FAST  |userclk2_BUFGP    |   0.000|
+mgt_tx_reset    |        10.839(R)|      SLOW  |         4.479(R)|      FAST  |userclk2_BUFGP    |   0.000|
+powerdown       |        10.567(R)|      SLOW  |         4.319(R)|      FAST  |userclk2_BUFGP    |   0.000|
+status_vector<0>|        10.701(R)|      SLOW  |         4.349(R)|      FAST  |userclk2_BUFGP    |   0.000|
+status_vector<1>|        10.597(R)|      SLOW  |         4.305(R)|      FAST  |userclk2_BUFGP    |   0.000|
+status_vector<2>|        10.468(R)|      SLOW  |         4.225(R)|      FAST  |userclk2_BUFGP    |   0.000|
+status_vector<3>|        10.697(R)|      SLOW  |         4.330(R)|      FAST  |userclk2_BUFGP    |   0.000|
+status_vector<4>|        10.594(R)|      SLOW  |         4.312(R)|      FAST  |userclk2_BUFGP    |   0.000|
+status_vector<5>|        10.554(R)|      SLOW  |         4.271(R)|      FAST  |userclk2_BUFGP    |   0.000|
+status_vector<6>|        10.587(R)|      SLOW  |         4.304(R)|      FAST  |userclk2_BUFGP    |   0.000|
+txchardispmode  |        10.289(R)|      SLOW  |         4.158(R)|      FAST  |userclk2_BUFGP    |   0.000|
+txchardispval   |        10.699(R)|      SLOW  |         4.317(R)|      FAST  |userclk2_BUFGP    |   0.000|
+txcharisk       |        11.362(R)|      SLOW  |         4.658(R)|      FAST  |userclk2_BUFGP    |   0.000|
+txdata<0>       |        10.739(R)|      SLOW  |         4.379(R)|      FAST  |userclk2_BUFGP    |   0.000|
+txdata<1>       |        10.748(R)|      SLOW  |         4.368(R)|      FAST  |userclk2_BUFGP    |   0.000|
+txdata<2>       |        10.758(R)|      SLOW  |         4.390(R)|      FAST  |userclk2_BUFGP    |   0.000|
+txdata<3>       |        10.513(R)|      SLOW  |         4.256(R)|      FAST  |userclk2_BUFGP    |   0.000|
+txdata<4>       |        10.439(R)|      SLOW  |         4.206(R)|      FAST  |userclk2_BUFGP    |   0.000|
+txdata<5>       |        10.432(R)|      SLOW  |         4.198(R)|      FAST  |userclk2_BUFGP    |   0.000|
+txdata<6>       |        10.348(R)|      SLOW  |         4.161(R)|      FAST  |userclk2_BUFGP    |   0.000|
+txdata<7>       |        10.534(R)|      SLOW  |         4.247(R)|      FAST  |userclk2_BUFGP    |   0.000|
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock userclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+userclk        |    0.737|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock userclk2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+userclk        |    2.702|         |         |         |
+userclk2       |    2.083|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Sep 20 17:55:50 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 1043 MB
+
+
+
